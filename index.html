@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五笔86版 | WUBI.INOCHI.ICU</title>
+</head>
+
+<body style="background: #cccccc;">
+    <embed src="wubi.swf">
+    <script src="https://libs.cdnjs.net/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            setEmbed();
+            $(window).on('resize', setEmbed);
+        });
+        function setEmbed() {
+            $('embed').attr('height', $(window).height() * 0.98);
+            $('embed').attr('width', $(window).width());
+        }
+    </script>
+</body>
+
+</html>
